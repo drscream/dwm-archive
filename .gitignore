@@ -1,0 +1,8 @@
+# C
+*.o
+# Binary
+dwm
+# Patches
+*.rej
+*.orig
+*.diff

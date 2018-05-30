@@ -899,7 +899,7 @@ drawbar(Monitor *m)
 	x = 0;
 	for (i = 0; i < LENGTH(tags); i++) {
 		w = TEXTW(tags[i]);
-		drw_setscheme(drw, scheme[(m->tagset[m->seltags] & 1 << i) ? BarSel : (urg & 1 << i ? BarUrg : (occ & 1 << 1 ? BarOcc : BarNorm))]);
+		drw_setscheme(drw, scheme[(m->tagset[m->seltags] & 1 << i) ? BarSel : (urg & 1 << i ? BarUrg : (occ & 1 << i ? BarOcc : BarNorm))]);
 		drw_text(drw, x, 0, w, bh, lrpad / 2, tags[i], 0);
 		XSetForeground(drw->dpy, drw->gc, m == selmon && selmon->sel && selmon->sel->tags & 1 << i ? scheme[SchemeSel][0].pixel : scheme[SchemeSel][ColBorder].pixel);
 		XFillRectangle(drw->dpy, drw->drawable, drw->gc, x, bh - taglinepx, w, taglinepx);

@@ -29,20 +29,17 @@ static const int toptab             = False;    /* False means bottom tab bar */
 
 static const char *fonts[]          = { "Hack:size=10" };
 static const char *colors[][17]      = {
-  /*         fg         bg         border   */
+  /*                  fg         bg         border   */
+  [SchemeNorm] =   { "#928374", "#282828",  "#282828"},
+  [SchemeSel]  =   { "#458588", "#282828",  "#ebdbb2"},
+  [SchemeUrg]  =   { "#fb4934", "#282828",  "#83a598"},
+  [SchemeOcc]  =   { "#83a598", "#282828",  "#83a598"},
 
-  [SchemeNorm] =   { "#928374", "#282828",  "#282828"},        /* [0]  01 - Client normal */
-  [SchemeSel]  =   { "#458588", "#282828",  "#ebdbb2"},        /* [1]  02 - Client selected */
-  [SchemeUrg]  =   { "#fb4934", "#282828",  "#83a598"},        /* [2]  03 - Client urgent */
-  [SchemeOcc]  =   { "#83a598", "#282828",  "#83a598"},        /* [3]  04 - Client occupied */
-  [BarNorm] =   { "#928374", "#282828",  "#282828"},        /* [0]  01 - Client normal */
-  [BarSel]  =   { "#458588", "#282828",  "#ebdbb2"},        /* [1]  02 - Client selected */
-  [BarUrg]  =   { "#fb4934", "#282828",  "#83a598"},        /* [2]  03 - Client urgent */
-  [BarOcc]  =   { "#83a598", "#282828",  "#83a598"},        /* [3]  04 - Client occupied */
-//  [BarNorm]    =   { "#928374", "#282828",  "#928374"},        /* [9]  0A - Bar normal*/
-//  [BarSel]     =   { "#a89985", "#282828",  "#3c3836"},        /* [10] 0B - Bar selected*/
-//  [BarUrg]     =   { "#fb4934", "#282828",  "#fb4934"},        /* [11] 0C - Bar urgent*/
-//  [LayoutNorm]     =   { "#458588", "#282828",  "#928374"},        /* [12] 0D - Bar occupied*/
+  [BarNorm]    =   { "#3c3836", "#282828",  "#3c3836"},
+  [BarSel]     =   { "#83a598", "#282828",  "#83a598"},
+  [BarUrg]     =   { "#fb4934", "#282828",  "#fb4934"},
+  [BarOcc]     =   { "#928374", "#282828",  "#3c3836"},
+
   [LayoutNorm]     =   { "#fb4934", "#282828",  "#fb4934"},        /* [15] 10 - Tag urgent*/
   [11]    =   { "#3c3836", "#282828",  "#3c3836"},        /* [13] 0E - Tag normal*/
   [12]     =   { "#83a598", "#282828",  "#83a598"},        /* [14] 0F - Tag selected*/

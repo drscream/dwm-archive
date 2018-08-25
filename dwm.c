@@ -887,7 +887,7 @@ drawbar(Monitor *m)
 	if (m == selmon) { /* status is only drawn on selected monitor */
 		drw_setscheme(drw, scheme[SchemeNorm]);
 		sw = drw_get_width(drw, LENGTH(colors), stext);
-		drw_colored_text(drw, scheme, LENGTH(colors), m->ww - sw, 0, sw, bh, 0, stext);
+		drw_colored_text(drw, scheme, LENGTH(colors), m->ww - sw - stw, 0, sw, bh, 0, stext);
 	}
 
 	resizebarwin(m);

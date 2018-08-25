@@ -59,8 +59,10 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	/* class             instance    title       tags mask     isfloating   monitor */
+	{ "Firefox",         NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Telegram",        NULL,       NULL,       1 << 4,       0,           -1 },
+	{ "ssh",             "coconut",  NULL,       1 << 3,       0,           -1 },
 };
 
 /* layout(s) */
